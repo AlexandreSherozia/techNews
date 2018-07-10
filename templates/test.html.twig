@@ -1,0 +1,20 @@
+{% extends 'layout.html.twig' %}
+
+{% set active = "home" %}
+
+{% block content %}
+    {% for article in articles %}
+    {{ article.id }} correspond au titre : {{ article.titre }} <br />
+    {% endfor %}
+
+
+    {% trans %} Symfony is great {% endtrans %}
+
+
+
+{% endblock %}
+
+{% block page_title %}
+    test page
+{% endblock %}
+
